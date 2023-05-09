@@ -23,12 +23,14 @@ Hace prácticamente lo mismo que Object.keys con pequeñas diferencias. (Ver DOC
 - Object.entries()
 El método entries nos devolverá un arrays de arrays donde tendremos nuestra palabra clave con su  respectivo
 valor por cada propiedad del prototipo [key,  value]
-    --> 
+   
+   ```
     [
-        0: (2) ["name", "Carlitos"]
-        1: (2) ["email", "carlitosmazzaroli@gmail.com"]
-        2: (2) ["age", 16]
+      0: (2) ["name", "Carlitos"]
+      1: (2) ["email", "carlitosmazzaroli@gmail.com"]
+      2: (2) ["age", 16]
     ]
+    ```
 
 
 
@@ -36,23 +38,27 @@ valor por cada propiedad del prototipo [key,  value]
 Nos devuelve todas las propiedades de los objetos, con sus keys y values, y otros atributos.
 Los atributos writable, configurable y enumerable. Es la forma que tiene JavaScript para limitar el acceso
 modificar o modificación de nuestros atributos o de nuestros objetos.
-    -->
-   {
-       age:{
-           configurable: true
-           enumerable: true
-           value: 16
-           writable: true
-       }
-       email:{
-           configurable: true
-           enumerable: true
-           value: "carlitosmazzaroli@gmail.com"
-           writable: true
-       }
-       name:{
-           configurable: true
-           enumerable: true
-           value: "Carlitos"
-       }
-   }
+
+```
+{
+  name: {
+    value: 'Juanito',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  email: {
+    value: 'juanito@frijolitos.io',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  age: {
+		value: 18,
+		writable: true,
+		enumerable: true,
+		configurable: true
+	}
+}
+```
+
